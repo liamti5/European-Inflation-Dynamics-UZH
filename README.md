@@ -1,10 +1,77 @@
 # european-inflation-dynamics
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+This is the GitHub Repository for the course Digital Tools for Finance at the University of Zurich. We are analysing European Inflation Dynamics to see if latitude/longitude can explain european differences in inflation dynamics.
 
-Project for UZH course Digital Tools for Finance. We are analysing European Inflation Dynamics.
+## List of currenices in Europe:
+
+ | Country                 | Currency       | Symbol | Code | Subunit               | Former Currency           |
+|-------------------------|----------------|--------|------|------------------------|----------------------------|
+| Albania                 | lek           | L      | ALL  | qindarke              | none                       |
+| Andorra                 | euro          | €      | EUR  | euro cent             | none official              |
+| Armenia                 | dram          | ֏      | AMD  | luma                  | ruble                      |
+| Austria                 | euro          | €      | EUR  | euro cent             | schilling                  |
+| Azerbaijan              | manat         | ₼      | AZN  | gapik                 | ruble                      |
+| Belarus                 | ruble         | Rbl    | BYN  | kopeck                | old ruble                  |
+| Belgium                 | euro          | €      | EUR  | euro cent             | franc                      |
+| Bosnia and Herzegovina  | mark          | KM     | BAM  | fening                | dinar                      |
+| Bulgaria                | lev           | лв.    | BGN  | stotinka              | old lev (BGL)              |
+| Croatia                 | euro          | €      | EUR  | euro cent             | Kuna                       |
+| Cyprus                  | euro          | €      | EUR  | euro cent             | pound                      |
+| Czech Republic          | koruna        | Kč     | CZK  | heller                | Czechoslovak koruna        |
+| Denmark                 | krone         | kr.    | DKK  | øre                   | rigsdaler                  |
+| Estonia                 | euro          | €      | EUR  | euro cent             | kroon                      |
+| Finland                 | euro          | €      | EUR  | euro cent             | markka                     |
+| France                  | euro          | €      | EUR  | euro cent             | franc                      |
+| Georgia                 | lari          | ₾      | GEL  | tetri                 | kuponi                     |
+| Germany                 | euro          | €      | EUR  | euro cent             | mark                       |
+| Greece                  | euro          | €      | EUR  | euro cent             | drachma                    |
+| Hungary                 | forint        | Ft.    | HUF  | fillér                | pengő                      |
+| Iceland                 | króna         | Kr.    | ISK  | aurar                 | old króna                  |
+| Ireland                 | euro          | €      | EUR  | euro cent             | punt                       |
+| Italy                   | euro          | €      | EUR  | euro cent             | lira                       |
+| Latvia                  | euro          | €      | EUR  | euro cent             | lats                       |
+| Liechtenstein           | franc         | CHF    | CHF  | rappen                | krone                      |
+| Lithuania               | euro          | €      | EUR  | euro cent             | litas                      |
+| Luxembourg              | euro          | €      | EUR  | euro cent             | franc                      |
+| Malta                   | euro          | €      | EUR  | euro cent             | lira                       |
+| Moldova                 | leu           | L      | MDL  | bani                  | cupon                      |
+| Monaco                  | euro          | €      | EUR  | euro cent             | franc                      |
+| Montenegro              | euro          | €      | EUR  | euro cent             | dinar                      |
+| Netherlands             | euro          | €      | EUR  | euro cent             | guilder                    |
+| North Macedonia         | denar         | DEN    | MKD  | deni                  | old denar                  |
+| Norway                  | krone         | kr.    | NOK  | øre                   | speciedaler                |
+| Poland                  | złoty         | zł     | PLN  | grosz                 | old złoty                  |
+| Portugal                | euro          | €      | EUR  | euro cent             | escudo                     |
+| Romania                 | leu           | lei    | RON  | bani                  | old leu                    |
+| Russia                  | ruble         | ₽      | RUB  | kopeck                | Soviet ruble               |
+| San Marino              | euro          | €      | EUR  | euro cent             | lira                       |
+| Serbia                  | dinar         | DIN    | RSD  | para                  | Yugoslav dinar             |
+| Slovakia                | euro          | €      | EUR  | euro cent             | koruna                     |
+| Slovenia                | euro          | €      | EUR  | euro cent             | tolar                      |
+| Spain                   | euro          | €      | EUR  | euro cent             | peseta                     |
+| Sweden                  | krona         | kr.    | SEK  | öre                   | riksdaler                  |
+| Switzerland             | franc         | CHF    | CHF  | rappen                | none                       |
+| Turkey                  | lira          | ₺      | TRY  | kuruş                 | old lira                   |
+| Ukraine                 | hryvnia       | ₴      | UAH  | kopeck (копійка)      | karbovanets                |
+| United Kingdom          | sterling      | £      | GBP  | penny (pl. pence)     | pre-decimal sterling       |
+| Vatican City            | euro          | €      | EUR  | euro cent             | lira                       |
+
+Source: [Wikipedia](https://en.wikipedia.org/wiki/List_of_currencies_in_Europe)
+
+![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eurozone_map.svg/1920px-Eurozone_map.svg.png)
+
+By <a href="//commons.wikimedia.org/wiki/User:Ssolbergj" title="User:Ssolbergj">Ssolbergj</a> - <span class="int-own-work" lang="en">Own work</span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2922522">Link</a>
+
+## Naming Conventions for Jupyter Notebooks
+
+`0.01-pjb-data-source-1.ipynb`
+
+0.01 - Helps leep work in chronological order. The structure is PHASE.NOTEBOOK. NOTEBOOK is just the Nth notebook in that phase to be created. For phases of the project, we generally use a scheme like the following, but you are welcome to design your own conventions:
+- 0 - Data exploration - often just for exploratory work
+- 1 - Data cleaning and feature creation - often writes data to data/processed or data/interim
+- 2 - Visualizations - often writes publication-ready viz to reports
+- 3 - Modeling - training machine learning models
+- 4 - Publication - Notebooks that get turned directly into reports
 
 ## Project Organization
 
