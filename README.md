@@ -2,6 +2,10 @@
 
 This is the GitHub Repository for the course Digital Tools for Finance at the University of Zurich. We are analysing European Inflation Dynamics to see if latitude/longitude can explain european differences in inflation dynamics.
 
+![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eurozone_map.svg/1920px-Eurozone_map.svg.png)
+
+By <a href="//commons.wikimedia.org/wiki/User:Ssolbergj" title="User:Ssolbergj">Ssolbergj</a> - <span class="int-own-work" lang="en">Own work</span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2922522">Link</a>
+
 ## List of currenices in Europe:
 
  | Country                 | Currency       | Symbol | Code | Subunit               | Former Currency           |
@@ -57,10 +61,6 @@ This is the GitHub Repository for the course Digital Tools for Finance at the Un
 | Vatican City            | euro          | €      | EUR  | euro cent             | lira                       |
 
 Source: [Wikipedia](https://en.wikipedia.org/wiki/List_of_currencies_in_Europe)
-
-![Alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eurozone_map.svg/1920px-Eurozone_map.svg.png)
-
-By <a href="//commons.wikimedia.org/wiki/User:Ssolbergj" title="User:Ssolbergj">Ssolbergj</a> - <span class="int-own-work" lang="en">Own work</span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2922522">Link</a>
 
 ## Naming Conventions for Jupyter Notebooks
 
