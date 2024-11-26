@@ -2,7 +2,16 @@
 
 This is the GitHub Repository for the course Digital Tools for Finance at the University of Zurich. We are analysing European Inflation Dynamics to see if latitude/longitude can explain european differences in inflation dynamics.
 
+## Processing external data
+
+In order to create the processed data necessary to run the final report, please run the bellow command:
+
+`make data`
+
+This will download all requirements for this project and save the processed data to the `data/processed/` folder.
+
 ## Compiling .tex files
+
 Pull the latest texlive image:
 
 `docker pull texlive/texlive:latest`
