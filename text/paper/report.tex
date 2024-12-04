@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{blindtext}
+\usepackage{hyperref}
 % bibliography
 \usepackage[
     backend=biber,
@@ -17,27 +18,43 @@
 
 \begin{document}
     \maketitle
+    \vspace{\baselineskip}
+    \vspace{\baselineskip}    
+    \vspace{\baselineskip}
     \begin{abstract}
-        \blindtext[2]
+    This project analyzes European inflation dynamics with a focus on the effects of longitude and latitude on inflation rates. By examining spatial patterns across different countries, the study aims to uncover how geographic location influences economic indicators within Europe. Utilizing data visualization and statistical modeling, the project provides insights into regional inflation trends and their relationship with geographical coordinates.
     \end{abstract}
+    \newpage
 
     \section{Introduction}
-        \begin{gather}
-        x = 1 \\
-        y = -1
-    \end{gather}
 
-    As mentioned by \cite{gal-2001}, inflation is cool.
+    Although inflation can be used as a financing tool to stimulate economic growth by incentivising people to purchase goods and invest their money rather than saving it, its benefits are limited. Rising prices erode the value of money and reduce people's purchasing power, negatively affecting especially those on fixed wages or pensions. Additionally, inflation can increase financial inequality by disproportionately harming wage earners more than asset owners (\cite{TheEffectofInflationonEconomicDevelopment}). These varied effects of inflation highlight the importance of understanding its underlying drivers.
+
+    Our research focuses solely on the potential effect of the longitude and latitude of European countries on their inflation rates. Specifically, we aim to investigate whether these metrics have a measurable effect on the inflation in European countries. This approach is interesting, as the geographic location of a country inherently shapes its dynamics within the broader inter-country financial ecosystem, which we therefore hypothesise might influence its inflation.
 
     \section{Data}
-    \blindtext[2]
+    
+    For our analysis we used data on European Inflation rates from the \href{https://data-explorer.oecd.org/vis?tm=inflation&pg=0&snb=50&vw=tb&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_PRICES%40DF_PRICES_HICP&df%5Bag%5D=OECD.SDD.TPS&df%5Bvs%5D=1.0&dq=HRV%2BBGR%2BTUR%2BGBR%2BCHE%2BSVN%2BSWE%2BESP%2BSVK%2BPRT%2BPOL%2BNOR%2BNLD%2BLUX%2BLTU%2BLVA%2BIRL%2BITA%2BISL%2BHUN%2BGRC%2BDEU%2BFRA%2BFIN%2BEST%2BDNK%2BBEL%2BCZE%2BAUT.M.HICP.CPI.PA._T.N.GY&to%5BTIME_PERIOD%5D=false&pd=2000-01%2C2024-10}{Organisation for Economic Co-operation and Development}. It contains Inflation data of 29 European countries. For most countries, there is data from 2000 until September 2024, but for some, such as Switzerland, there is less. For this reason, we removed the missing timeperiods for all countries which results in a dataset of inflation rates from December 2005 until September 2024. For more insights into this data source, please see the notebook \emph{0.02-lte-oced-european-inflation-rates-1.ipynb}. 
+
+    For the longitude and latitude data, we used Google's \href{https://developers.google.com/public-data/docs/canonical/countries_csv}{countries.csv}. It provides longitude and latitude data for all countries. While processing this dataset we remove all countries that are not in europe, and thus not of interest.
+
+    In order to run this notebook interactively, please run the `make data` command in the command line while situated in the root directory of this project, if not already done. This will download all requirements and create the processed data from the external data. Then we are ready to read the processed files.
 
     \section{Methodology}
-    \blindtext[2]
+
+    Countries' shapes and sizes vary widely, which introduces some complexity when it comes to choosing how to represent the longitude and latitude of each country. After some deliberation, we opted for the geometric centres, also called centroids. Although Google's \href{https://developers.google.com/public-data/docs/canonical/countries_csv}{countries.csv} doesn't explicitly specify how the longitudes and latitudes are calculated, upon maunal inspection it became clear that their provided coordinates align closely with the countries' polygon centroids, making this dataset a suitable choice.
+    
+    Since inflation is a continuous metric, we employed linear regression as our model. Specifically, we performed regressions using longitude, latitude, as well as both variables combined. This allows us to analyze not only the effect of the absolute geographic positioning of a country on its inflation, but also conduct a differenciated analysis of its longitude and latitude individually.
 
     \section{Results}
-    \blindtext[2]
+    
+    ...
 
+    \section{Discussion}
+    
+    ...
+
+    \newpage
     \printbibliography
 
 \end{document}
