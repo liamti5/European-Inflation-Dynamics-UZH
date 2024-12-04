@@ -39,6 +39,7 @@ def data_long_lat():
 
 @app.command()
 def main():
+    PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
     logger.info("Processing dataset...")
 
     data_functions = [

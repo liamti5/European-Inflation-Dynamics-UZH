@@ -1,14 +1,83 @@
-
 \documentclass[10pt]{beamer}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[
+    backend=biber,
+    style=bwl-FU,
+    url=false,
+    doi=false,
+    eprint=false
+]{biblatex}
+\addbibresource{citations.bib}
+
+\title{Analysing the Effect of Longitude and Latitude on European Inflation Dynamics}
+\author{Valentin Leuthard, Panagiotis Patsias, Liam Kane, Liam Tessendorf}
 
 \begin{document}
 
-\author{Valentin Leuthard, Panagiotis Patsias, Liam Kane, Liam Tessendorf}
-
-% ---------------------------------------------------------------------------
+% Title Page
 \begin{frame}
-\titlepage
+  \titlepage
 \end{frame}
-% ---------------------------------------------------------------------------
+
+% Introduction
+\begin{frame}{Motivation \& Aim}
+  \begin{itemize}
+    \item Inflation can stimulate economic growth but has limitations. \footnote{\cite{TheEffectofInflationonEconomicDevelopment}}
+
+    \item Rising prices reduce purchasing power, disproportionately affecting wage earners. \footnotemark[1]
+
+    \item Understanding drivers of inflation is crucial.
+    \vspace{1em}
+    \item \textbf{We focus on whether geographic coordinates (longitude, latitude) influence inflation rates in Europe.}
+  \end{itemize}
+\end{frame}
+
+% Data
+\begin{frame}{Data}
+  \begin{itemize}
+    \item Inflation data: \emph{OECD dataset} (29 European countries, Dec. 2005 – Sep. 2024).
+    \begin{itemize}    
+        \item Removed missing time periods for consistency.
+    \end{itemize}
+    \item Geographic data: Google’s \href{https://developers.google.com/public-data/docs/canonical/countries_csv}{\emph{countries.csv}}, filtered for European countries.
+  \end{itemize}
+\end{frame}
+
+% Methodology
+\begin{frame}{Methodology}
+  \begin{itemize}
+    \item Longitude-latitude
+    \begin{itemize}
+        \item Use centroid-based longitude and latitude for each European country.
+    \end{itemize}
+    \item Model
+    \begin{itemize}
+        \item Linear regressions on inflation using longitude, latitude, and both.
+    \end{itemize}
+    \vspace{1em}
+    \item \textbf{Goal: Identify any measurable geographic influence on inflation.}
+  \end{itemize}
+\end{frame}
+
+% Results
+\begin{frame}{Results}
+
+...
+
+\end{frame}
+
+% Discussion
+\begin{frame}{Discussion}
+
+...
+
+\end{frame}
+
+% References
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography
+\end{frame}
 
 \end{document}
