@@ -41,8 +41,6 @@
 
     For the longitude and latitude data, we used Google's \href{https://developers.google.com/public-data/docs/canonical/countries_csv}{countries.csv}. It provides longitude and latitude data for all countries. While processing this dataset we remove all countries that are not in europe, and thus not of interest.
 
-    In order to run this notebook interactively, please run the `make data` command in the command line while situated in the root directory of this project, if not already done. This will download all requirements and create the processed data from the external data. Then we are ready to read the processed files.
-
     \section{Methodology}
 
     Countries' shapes and sizes vary widely, which introduces some complexity when it comes to choosing how to represent the longitude and latitude of each country. After some deliberation, we opted for the geometric centres, also called centroids. Although Google's \href{https://developers.google.com/public-data/docs/canonical/countries_csv}{countries.csv} doesn't explicitly specify how the longitudes and latitudes are calculated, upon maunal inspection it became clear that their provided coordinates align closely with the countries' polygon centroids, making this dataset a suitable choice.
