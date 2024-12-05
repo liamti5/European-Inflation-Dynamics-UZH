@@ -1,6 +1,22 @@
 # european-inflation-dynamics
+> [!NOTE]  
+> This repository is part of the Digital Tools for Finance course at the University of Zurich. While the focus of this project involves analyzing European Inflation Dynamics, the primary purpose of this repository is not the research itself. Instead, the emphasis is on developing a well-organized project structure, practicing efficient use of digital tools for research, and understanding software development concepts that can boost productivity in research.
 
-This is the GitHub Repository for the course Digital Tools for Finance at the University of Zurich. We are analysing European Inflation Dynamics to see if latitude/longitude can explain european differences in inflation dynamics.
+##  Setting up Development Environment using Docker
+
+The easiest way to start with this repository is to build the docker image using the provided dockerfile:
+
+`docker build -t european-inflation-dynamics .`
+
+Then, once the image is built, run the docker container
+- if you want to keep changes that you make in the container, you can mount your project directory to the container using a volume by running
+`docker run -it --rm -p 8888:8888 -v $(pwd):/app european-inflation-dynamics`
+- if you **don't** want to keep the changes you make in the container, run `docker run -it -p 8888:8888 --rm european-inflation-dynamics
+`
+
+This will open an interactive bash session. You can look around the project, run `make` commands etc. If you want to launch a jupyter server, run the following command:
+
+`jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root`
 
 ## Processing external data
 
@@ -9,6 +25,8 @@ In order to create the processed data necessary to run the final report, please 
 `make data`
 
 This will download all requirements for this project and save the processed data to the `data/processed/` folder.
+
+
 
 ## Compiling .tex files
 
