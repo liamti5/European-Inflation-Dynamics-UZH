@@ -18,6 +18,9 @@ This will open an interactive bash session. You can look around the project, run
 
 `jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root`
 
+> [!IMPORTANT]  
+> Before starting the jupyter server, make sure to process the external data. See section below!
+
 ## Processing external data
 
 In order to create the processed data necessary to run the final report, please run the bellow command:
