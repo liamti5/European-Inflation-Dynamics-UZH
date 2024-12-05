@@ -27,7 +27,7 @@ In order to create the processed data necessary to run the final report, please 
 
 `make data`
 
-This will download all requirements for this project and save the processed data to the `data/processed/` folder.
+This will process the external data and save the processed data to the `data/processed/` folder.
 
 
 
