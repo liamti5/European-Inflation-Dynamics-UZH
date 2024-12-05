@@ -1,6 +1,6 @@
 # european-inflation-dynamics
 > [!NOTE]  
-> This repository is part of the Digital Tools for Finance course at the University of Zurich. While the focus of this project involves analyzing European Inflation Dynamics, the primary purpose of this repository is not the research itself. Instead, the emphasis is on developing a well-organized project structure, practicing efficient use of digital tools for research, and understanding software development concepts that can boost productivity in research.
+> This repository is part of the Digital Tools for Finance course at the University of Zurich. While the focus of this project involves analyzing European Inflation Dynamics, the primary purpose of this repository is not the research itself. Instead, the emphasis is on developing a well-organized project structure, practicing efficient use of digital tools for research, and understanding software development concepts that can boost productivity in research. See the [it-skills-for-research](https://github.com/ipozdeev/it-skills-for-research/tree/master?tab=readme-ov-file) repo for more info.
 
 ##  Setting up Development Environment using Docker
 
