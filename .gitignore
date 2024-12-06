@@ -173,13 +173,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# Ignore everything in 'report' except .bib, .pdf, and .tex files
+# Ignore everything in /text/paper and /text/presentation except .bib, .pdf, and .tex files
 /text/paper/*
 !/text/paper/*.bib
 !/text/paper/*.pdf
 !/text/paper/*.tex
 
-# Ignore everything in 'presentation' except .bib, .pdf, and .tex files
 /text/presentation/*
 !/text/presentation/*.bib
 !/text/presentation/*.pdf
