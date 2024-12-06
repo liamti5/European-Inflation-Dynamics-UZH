@@ -174,13 +174,13 @@ cython_debug/
 .idea/
 
 # Ignore everything in 'report' except .bib, .pdf, and .tex files
-report/*
-!report/*.bib
-!report/*.pdf
-!report/*.tex
+/text/paper/*
+!/text/paper/*.bib
+!/text/paper/*.pdf
+!/text/paper/*.tex
 
 # Ignore everything in 'presentation' except .bib, .pdf, and .tex files
-presentation/*
-!presentation/*.bib
-!presentation/*.pdf
-!presentation/*.tex
+/text/presentation/*
+!/text/presentation/*.bib
+!/text/presentation/*.pdf
+!/text/presentation/*.tex
