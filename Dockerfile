@@ -22,4 +22,4 @@ RUN pip install jupyter
 EXPOSE 8888
 
 # Set the default command to run Jupyter Notebook
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+CMD ["bash"]

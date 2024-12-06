@@ -65,7 +65,7 @@ create_environment:
 
 ## Make Dataset
 .PHONY: data
-data: requirements
+data:
 	$(PYTHON_INTERPRETER) european_inflation_dynamics/dataset.py
 
 
