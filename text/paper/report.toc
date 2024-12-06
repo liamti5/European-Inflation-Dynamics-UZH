@@ -2,4 +2,10 @@
 \contentsline {section}{\numberline {2}Data}{3}{section.2}%
 \contentsline {section}{\numberline {3}Methodology}{3}{section.3}%
 \contentsline {section}{\numberline {4}Results}{4}{section.4}%
-\contentsline {section}{\numberline {5}Discussion}{4}{section.5}%
+\contentsline {subsection}{\numberline {4.1}Regression on latitude}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Regression on longitude}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Combined regression on latitude \& longitude}{4}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Discussion}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Key Findings}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Implications}{5}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusion}{6}{section.6}%

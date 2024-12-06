@@ -61,23 +61,111 @@
   \end{itemize}
 \end{frame}
 
-% Results
-\begin{frame}{Results}
+% Results Latitude regression
+\begin{frame}{Results Latitude regression}
+  \centering
+  \begin{tabular}{cccc}
+      \hline
+      {} &  Coefficient &  Std. Error &   P-Value \\
+      \hline  
+      Intercept &     7.108 &    4.0227 &  0.0885 \\
+      latitude  &    -0.0767 &    0.0791 &  0.3413 \\
+      \hline
+      R-squared     &     0.043\\
+      F-Statistic probability &   0.341\\
+      \hline
+      \vspace{1em}
+      \end{tabular}
+      
+  
+  \begin{itemize}
+      \item The results of the latitude regression are not statistically significant
+  \end{itemize}
 
-...
+\end{frame}
 
+% Results of Longitude Regression
+
+\begin{frame}{Results Longitude Regression}
+  \centering
+  \begin{tabular}{cccc}
+      \hline
+      {} &  Coefficient &  Std. Error &   P-Value \\
+      \hline
+      Intercept &     1.9919 &    0.7193 &  0.0100 \\
+      longitude &     0.1061 &    0.0424 &  0.0187 \\
+      \hline
+      R-squared     &     0.188\\
+      F-Statistic probability &   0.0188\\
+      \hline
+      \vspace{1em}
+      \end{tabular}
+
+  \begin{itemize}
+      \item The results of the longitude regression are statistically significant at the 5\% significance level
+      \item This indicates a positive correlation between the degree of longitude and the mean inflation rate
+      \item Simplified this means moving more to the east results in a higher inflation rate
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Results of combined regression}
+  \centering
+  \begin{tabular}{cccc}
+      \hline
+      {} &  Coefficient &  Std. Error &   P-Value \\
+      \hline
+      Intercept &     4.8368 &    3.8383 &  0.2188 \\
+      latitude  &    -0.0556 &    0.0737 &  0.4571 \\
+      longitude &     0.1022 &    0.0430 &  0.0253 \\
+      \hline
+      R-squared     &    0.205\\
+      F-Statistic Probability &   0.0503\\
+      \hline
+      \vspace{1em}
+      \end{tabular}
+      
+  \begin{itemize}
+      \item Similar results to the univariate regressions 
+      \item Latitude remains statistically insignificant
+      \item Longitude remains statistically significant
+  \end{itemize}
 \end{frame}
 
 % Discussion
 \begin{frame}{Discussion}
 
-...
+  \begin{itemize}
+      \item Latitude
+      \begin{itemize}
+          \item There seems to be no north-south effect
+      \end{itemize}
+      \item Longitude
+      \begin{itemize}
+          \item Mean inflation rates seem to increase moving eastward
+      \end{itemize}
+      \item R-squared
+      \begin{itemize}
+          \item The R-squared of the combined regression is 20.5\% 
+          \item This suggests only limited explanatory power of the model
+      \end{itemize}
+      
+      \end{itemize}
+  \vspace{1em}
+
+  \begin{itemize}
+      \item Limitations
+      \begin{itemize}
+          \item Longitude data seems to be heavily influenced by Turkey, which lies is one of the most eastern countries and has a high inflation rate
+          \item The low R-squared value suggests that more factors should be included to model inflation effectively
+      \end{itemize}
+  \end{itemize}
 
 \end{frame}
 
 % References
 \begin{frame}[allowframebreaks]{References}
-  \printbibliography
+\printbibliography
 \end{frame}
 
 \end{document}
