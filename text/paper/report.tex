@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{blindtext}
 \usepackage{hyperref}
+\usepackage{booktabs}
 % bibliography
 \usepackage[
     backend=biber,
@@ -49,11 +50,95 @@
 
     \section{Results}
     
-    ...
+    As mentioned in the last chapter we ran regressions on latitude, longitude as well as a combined regression of the inflation data on latitude and longitude. 
 
-    \section{Discussion}
+    \subsection{Regression on latitude}
+
+    The regression using the latitude data of European countries yields the results in the table below.
+   
+    \vspace{\baselineskip}
+
+    \begin{center}
+    \begin{tabular}{cccc}
+        \toprule
+        {} &  Coefficient &  Std. Error &   P-Value \\
+        \midrule
+        Intercept &     7.108 &    4.0227 &  0.0885 \\
+        latitude  &    -0.0767 &    0.0791 &  0.3413 \\
+        \hline
+        R-squared     &     0.043\\
+        F-Statistic probability &   0.341\\
+        \bottomrule
+        
+        \end{tabular}
+    \end{center}
+    \vspace{\baselineskip}
+
+    These results are not statistically significant, since the P-value is 0.34 exceeding the normal margin for statistical significance for which it is 0.05.
+
+    \subsection{Regression on longitude}
+
+    Regression using the longitude data of the European countries yields the results in the table below.
+
+    \vspace{\baselineskip}
+
+    \begin{center}
+    \begin{tabular}{cccc}
+        \toprule
+        {} &  Coefficient &  Std. Error &   P-Value \\
+        \midrule
+        Intercept &     1.9919 &    0.7193 &  0.0100 \\
+        longitude &     0.1061 &    0.0424 &  0.0187 \\
+        \hline
+        R-squared     &     0.188\\
+        F-Statistic probability &   0.0188\\
+        \bottomrule
+        \end{tabular}
+    \end{center}
+    \vspace{\baselineskip}
+
+    This regression yields a statistically significant result with a P-value of 0.0424. This indicates a positive correlation between the latitude of a country and its mean inflation in the years between 2005 and 2024.
+
+    \subsection{Combined regression on latitude \& longitude}
+
+    The results of the multivariate regression using latitude and longitude data are depicted below.
+
+    \vspace{\baselineskip}
+
+    \begin{center}
+    \begin{tabular}{cccc}
+        \toprule
+        {} &  Coefficient &  Std. Error &   P-Value \\
+        \midrule
+        Intercept &     4.8368 &    3.8383 &  0.2188 \\
+        latitude  &    -0.0556 &    0.0737 &  0.4571 \\
+        longitude &     0.1022 &    0.0430 &  0.0253 \\
+        \hline
+        R-squared     &    0.205\\
+        F-Statistic Probability &   0.0503\\
+        \bottomrule
+        \end{tabular}
+    \end{center}
+    \vspace{\baselineskip}
     
-    ...
+    The results of the multivariate regression show a similar picture to the results of the univariate regressions. As latitude is still statistically not statistically significant, longitude remains statistically significant when using a statistical significance level of 0.05. Looking more closely at the values we can see that in the combined regression we have smaller coefficients and higher P-values than in the univariate regressions.
+    
+    \section{Discussion}
+    This regression analysis investigates the relationship between inflation rates (dependent variable) and geographical coordinates (latitude and longitude) for European countries. The model is based on Ordinary Least Squares (OLS) regression.
+    
+    \subsection{Key Findings}
+
+    The multivariate regression has a R-squared value of 0.205 meaning the regression longitude and latitude combined explain 20.5\% of the variation. This indicates a limited explanatory power of the regression.
+
+    Latitude is statistically not significant. This indicates that there is no significant north-south effect of inflation.
+
+    Longitude is statistically significant. This suggests that the inflation rates increase looking at countries more to the east. This seems to be influenced greatly by Turkey lies far to the east and has a very high inflation rate.
+
+    \subsection{Implications}
+    Longitude's significance suggests potential east-west economic trends, while latitude appears to have no impact. This is further supported by the correlation matrix, where longitude consistently shows a stronger relationship with inflation rates across all years (except 2009). However, the low R-squared indicates that geographic data alone is insufficient to model inflation, emphasizing the need to incorporate other economic factors for a more comprehensive analysis.
+
+    \section{Conclusion}
+    Geographical coordinates play a minor role in explaining inflation rates, with longitude showing some regional significance. Future models should integrate additional variables for better insight.
 
     \newpage
     \printbibliography
