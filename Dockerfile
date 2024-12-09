@@ -21,5 +21,5 @@ RUN pip install jupyter
 # Expose port for Jupyter Notebook
 EXPOSE 8888
 
-# Set the default command to run Jupyter Notebook
+# Set the default command to bash for a interactive session
 CMD ["bash"]
