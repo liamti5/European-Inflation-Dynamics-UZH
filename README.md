@@ -1,6 +1,11 @@
-# european-inflation-dynamics
+# European-Inflation-Dynamics
 > [!NOTE]  
-> This repository is part of the Digital Tools for Finance course at the University of Zurich. While the focus of this project involves analyzing European Inflation Dynamics, the primary purpose of this repository is not the research itself. Instead, the emphasis is on developing a well-organized project structure, practicing efficient use of digital tools for research, and understanding software development concepts that can boost productivity in research. See the [it-skills-for-research](https://github.com/ipozdeev/it-skills-for-research/tree/master?tab=readme-ov-file) repo for more info.
+> This repository is part of the Digital Tools for Finance course at the University of Zurich. 
+> While the focus of this project involves analyzing European Inflation Dynamics, the primary purpose of this repository is 
+> not the research itself. Instead, the emphasis is on developing a well-organized project structure, practicing efficient use 
+> of digital tools for research, and understanding software development concepts that can boost productivity in research. 
+> See the [it-skills-for-research](https://github.com/ipozdeev/it-skills-for-research/tree/master?tab=readme-ov-file) repository
+> for more info.
 
 ## Abstract
 
@@ -8,8 +13,8 @@ This project analyzes European inflation dynamics with a focus on the
 effects of longitude and latitude on inflation rates. By examining spatial
 patterns across different countries, the study aims to uncover how geographic location influences economic indicators within Europe. Utilizing
 data visualization and statistical modeling, the project provides insights
-into regional inflation trends and their relationship with geographical co-
-ordinates. Our research shows that geographical coordinates play a minor role in explaining inflation rates.
+into regional inflation trends and their relationship with geographical coordinates. Our research shows that geographical 
+coordinates play a minor role in explaining inflation rates.
 Longitude's significance suggests potential east-west economic trends, while latitude appears to have no impact. 
 This is further supported by the correlation matrix, where longitude consistently shows a stronger relationship with inflation rates across all years (except 2009). 
 However, the low R-squared indicates that geographic data alone is insufficient to model inflation, emphasizing the need to incorporate other economic factors for 
