@@ -65,7 +65,7 @@ docker build -t european-inflation-dynamics .
 3. Then, once the image is built, run the docker container 
    1. if you want to keep changes that you make in the container, you can mount your project directory to the container using a volume by running
     ```bash
-   docker run -it --rm -p 8888:8888 -v $(pwd):/app european-inflation-dynamics
+   docker run -it --rm -p 8888:8888 -v "$(pwd):/app" european-inflation-dynamics
    ```
    
    2. if you **don't** want to keep the changes you make in the container, run 
@@ -103,15 +103,21 @@ This will process the external data and save the processed data to the `data/pro
 
 Pull the latest texlive image:
 
-`docker pull texlive/texlive:latest`
+```bash
+docker pull texlive/texlive:latest
+```
 
 Run the docker image within your working directory as an interactive terminal:
 
-`docker run -it -v "$(pwd):/workdir" texlive/texlive /bin/bash`
+```bash
+docker run -it -v "$(pwd):/workdir" texlive/texlive /bin/bash
+```
 
 To compile the .tex files, run the pdflatex command in the directory where the .tex file is situated.:
 
-`pdflatex report.tex`
+```bash
+pdflatex report.tex
+```
 
 You should see the resulting `report.pdf` in your folder. 
 
