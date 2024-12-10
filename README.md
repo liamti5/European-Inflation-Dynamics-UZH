@@ -49,21 +49,37 @@ Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
 
-##  Setting up Development Environment using Docker to reproduce findings
+##  Setting up Development Environment using Docker to reproduce our findings
 
-The easiest way to start with this repository is to build the docker image using the provided dockerfile:
+1. Clone the repository
 
-`docker build -t european-inflation-dynamics .`
+```bash
+git clone https://github.com/liamti5/European-Inflation-Dynamics-UZH.git
+```
 
-Then, once the image is built, run the docker container
-- if you want to keep changes that you make in the container, you can mount your project directory to the container using a volume by running
-`docker run -it --rm -p 8888:8888 -v $(pwd):/app european-inflation-dynamics`
-- if you **don't** want to keep the changes you make in the container, run `docker run -it -p 8888:8888 --rm european-inflation-dynamics
-`
+2. Build the docker image using the provided dockerfile (you need to have [Docker](https://www.docker.com/products/docker-desktop/) installed):
+```bash
+docker build -t european-inflation-dynamics .
+```
 
-This will open an interactive bash session. You can look around the project, run `make` commands etc. If you want to launch a jupyter server, run the following command:
+3. Then, once the image is built, run the docker container 
+   1. if you want to keep changes that you make in the container, you can mount your project directory to the container using a volume by running
+    ```bash
+   docker run -it --rm -p 8888:8888 -v $(pwd):/app european-inflation-dynamics
+   ```
+   
+   2. if you **don't** want to keep the changes you make in the container, run 
+   ```bash
+   docker run -it -p 8888:8888 --rm european-inflation-dynamics
+   ```
 
-`jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root`
+4. You should see an interactive bash session (in your commandline). You can look around the project, run `make` commands etc.
+5. If you want to launch a jupyter server, run the following command:
+```bash
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+```
+6. Once you have launched the juypter server, you should see a link in the commandline that looks like `http://127.0.0.1:8888/tree?token=154188e9400e1dabbe3b562a7dc3a7d4ca523e9f2c1529e9`. Just click the link and you should see the project in your browser where you can run notebooks etc.
+Optionally you can also configure your code editor to use this link as the jupyter server. 
 
 > [!IMPORTANT]  
 > Before starting the jupyter server, make sure to process the external data. See section below!
