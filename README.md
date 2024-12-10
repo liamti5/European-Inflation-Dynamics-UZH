@@ -74,7 +74,7 @@ docker build -t european-inflation-dynamics .
    ```
 
 4. You should see an interactive bash session (in your commandline). You can look around the project, run `make` commands etc.
-5. If you want to launch a jupyter server, run the following command:
+5. If you want to launch a jupyter server (necessary if you want to actually run the jupyter notebooks), run the following command:
 ```bash
 jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 ```
