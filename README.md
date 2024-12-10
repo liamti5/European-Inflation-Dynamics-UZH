@@ -85,6 +85,9 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 
 6. Once you have launched the juypter server, you should see a link in the commandline that looks like `http://127.0.0.1:8888/tree?token=154188e9400e1dabbe3b562a7dc3a7d4ca523e9f2c1529e9`. Just click the link and you should see the project in your browser where you can run notebooks etc.
 Optionally you can also configure your code editor to use this link as the jupyter server. 
+> [!CAUTION]
+> If you use VS Code: VS Code relies on the current working directory (CWD) when starting the Jupyter server or connecting to a kernel.
+> If the server starts in the wrong directory, the kernel will use that as its root, causing issues when trying to locate files or modules.
 
 ## Processing external data
 
