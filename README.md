@@ -74,15 +74,17 @@ docker build -t european-inflation-dynamics .
    ```
 
 4. You should see an interactive bash session (in your commandline). You can look around the project, run `make` commands etc.
-5. If you want to launch a jupyter server (necessary if you want to actually run the jupyter notebooks), run the following command:
+
+6. If you want to launch a jupyter server (necessary if you want to actually run the jupyter notebooks), run the following command:
 ```bash
 jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 ```
-6. Once you have launched the juypter server, you should see a link in the commandline that looks like `http://127.0.0.1:8888/tree?token=154188e9400e1dabbe3b562a7dc3a7d4ca523e9f2c1529e9`. Just click the link and you should see the project in your browser where you can run notebooks etc.
-Optionally you can also configure your code editor to use this link as the jupyter server. 
-
 > [!IMPORTANT]  
 > Before starting the jupyter server, make sure to process the external data. See section below!
+
+
+6. Once you have launched the juypter server, you should see a link in the commandline that looks like `http://127.0.0.1:8888/tree?token=154188e9400e1dabbe3b562a7dc3a7d4ca523e9f2c1529e9`. Just click the link and you should see the project in your browser where you can run notebooks etc.
+Optionally you can also configure your code editor to use this link as the jupyter server. 
 
 ## Processing external data
 
