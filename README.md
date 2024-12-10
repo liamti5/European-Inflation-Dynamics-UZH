@@ -109,7 +109,7 @@ Run the docker image within your working directory as an interactive terminal:
 
 `docker run -it -v "$(pwd):/workdir" texlive/texlive /bin/bash`
 
-To compile the .tex files, run the pdflatex command:
+To compile the .tex files, run the pdflatex command in the directory where the .tex file is situated.:
 
 `pdflatex report.tex`
 
